@@ -4,11 +4,13 @@ $gutter: modular-scale(0, 0em, $golden);
 
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
-$mobile: new-breakpoint(max-width: 640px);
+$mobile: new-breakpoint(max-width 640px);
 
 
 body {
   font-family: 'Oswald', Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 0;
 }
 
@@ -37,28 +39,32 @@ z-index: -1
   left: 0;
   right: 0;
   bottom: 0;
-z-index: -1
-
+z-index: -1;
 }
 
-.logo {
-  @include span-columns(1);
-}
 
 .logo {
   background-image: url(../logo.png);
   background-size: cover;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   z-index: 1;
   vertical-align: middle;
   display: block;
-margin-left: 45%;
-margin-top: 6%;
+margin-left: 43%;
+margin-top: 4%;
+@include media($mobile) {
+margin-top: 1%;
+}
+}
+
+.hero-text{
+  width: 100%;
+  text-align: center;
 }
 
 .hero-text {
-  text-align: center;
+@include span-columns(12);
   display: block;
   font-size: 80px;
   color: white;
@@ -67,10 +73,10 @@ margin-top: 6%;
   font-family: 'Oswald' sans-serif;
   font-weight: bold;
   margin-right: 0;
-  margin-top: 20%;
+  margin-top: 3%;
   position: absolute;
-  left: 12%;
-  letter-spacing: 10px;
+  left: 0;
+  letter-spacing: 5px;
 }
 
 .Small-text {
@@ -78,7 +84,6 @@ margin-top: 6%;
   display: block;
   height: 10px;
   z-index: 1;
-  font-family: sans-serif;
   margin-top: 16%;
   position: absolute;
   top: 0;
@@ -87,6 +92,12 @@ margin-top: 6%;
   bottom: 0;
   margin-bottom: 10%;
   font-size: 22px;
+  font-family: 'Lato' sans-serif;
+  font-weight: 100;
+  @include media ($mobile) {
+    margin-top: 23%;
+    left: 18%;
+  }
 }
 
 .subhero {
@@ -94,15 +105,17 @@ margin-top: 6%;
  display: block;
  position: absolute;
  font-size: 25px;
- top: 55%;
- left: 35%;
-@include media($mobile) {
- top: 10%;
-}
+ top: 53%;
+ left: 33%;
+ @include media ($mobile) {
+   left: 15%;
+   top: 60%;
+ }
 }
 
 .header-container {
-height: 80px;
+
+height: 90px;
 background-color: rgba(40, 44, 52, 1);
 display: block;
 margin-top: 705.2px;
@@ -111,10 +124,15 @@ margin-top: 705.2px;
 .about {
   color: white;
   display: inline-block;
-  margin-left: 200px;
+  margin-left: 190px;
   padding-right: 30px;
-  margin-top: 10px;
-  margin-right: 20px;
+  margin-top: 0;
+  margin-right: 15px;
+  @include media ($mobile) {
+    margin-left: 0;
+    padding-right: 5px;
+    margin-top: 30px;
+  }
 }
 
 .products {
@@ -122,12 +140,18 @@ margin-top: 705.2px;
   display: inline-block;
   padding-right: 30px;
   margin-right: 20px;
+  @include media ($mobile) {
+    padding-right: 5px;
+  }
 }
 
 .swamprabbit {
   color: white;
   display: inline-block;
   padding-right: 30px;
+  @include media ($mobile) {
+    padding-right: 5px;
+  }
 }
 
 .logo-header {
@@ -137,7 +161,11 @@ margin-top: 705.2px;
   display: inline-block;
   background-size: cover;
   margin-right: 30px;
- margin-top: 5px;
+ margin-top: 9px;
+ @include media ($mobile) {
+   height: 0;
+   width: 0;
+ }
 }
 
 .blog {
@@ -145,6 +173,9 @@ color: white;
 display: inline-block;
 padding-right: 30px;
 margin-right: 20px;
+@include media ($mobile) {
+  padding-right: 5px;
+}
 }
 
 .media {
@@ -152,6 +183,9 @@ color: white;
 display: inline-block;
 padding-right: 30px;
 margin-right: 20px;
+@include media ($mobile) {
+  padding-right: 5px;
+}
 }
 
 .contact {
@@ -159,54 +193,96 @@ color: white;
 display: inline-block;
 }
 
+
+
 .heading1 {
   display: inline-block;
   margin-left: 450px;
-  margin-top: 130px;
+  margin-top: 60px;
+@include media($mobile) {
+  margin-left: 200px;
+}
+
 }
 
 .heading2 {
   display: inline-block;
   color: rgba(239, 22, 6, 1);
+  @include media($mobile) {
+  position: relative;
+  bottom: 68px;
+  left: 265px;
+  }
 }
 
 .question {
   display: inline-block;
+  @include media ($mobile) {
+    position: relative;
+    bottom: 135px;
+    left: 375px;
+  }
 }
 
 .paragraph1 {
-  width: 600px;
+  width: 590px;
   margin-left: 330px;
+  @include media ($mobile) {
+    position: relative;
+    margin-left: 100px;
+    width: 450px;
+    bottom: 140px;
+  }
+}
+
+.article {
+
 }
 
 .shop-button {
+@include span-columns(4);
+}
+
+.shop-buttons {
+  width: 150px;
   color: white;
-  width: 15%;
-  height: em(55);
   background-color: black;
+  height: em(55);
   display: block;
-  border: none;
-  margin-left: 500px;
-  border: gray;
-  text-align: center;
+  margin-left: 530px;
 }
 
-.article-containter {
-  @include span-columns(12);
-
-  @include media($mobile);
-  @include span-columns(4 of 12);
-}
-
-.header-container {
-@include span-columns(12);
-}
-
-.hero-container {
-@include span-columns(12);
-@include media($mobile) {
-@include span-columns(4 of 12)
-@include omega(2n);
+.article-list {
+  @include outer-container(1280px);
+  list-style-type: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: absolute;
+  top: 1180px;
 
 }
+
+.article1 {
+@include span-columns(6);
+border-top: thin solid gray;
+}
+
+
+.articles {
+  width: 80%;
+  height: 330px;
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+.learn-more-button {
+  @include span-columns(2);
+}
+
+.learn-more-buttons {
+  width: 150px;
+  color: white;
+  background-color: black;
+  height: em(55);
+  margin-top: 10px;
 }
