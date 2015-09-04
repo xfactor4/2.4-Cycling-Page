@@ -200,7 +200,7 @@ display: inline-block;
   margin-left: 450px;
   margin-top: 60px;
 @include media($mobile) {
-  margin-left: 200px;
+  margin-left: 130px;
 }
 
 }
@@ -211,7 +211,8 @@ display: inline-block;
   @include media($mobile) {
   position: relative;
   bottom: 68px;
-  left: 265px;
+  left: 5px;
+  top: 1px;
   }
 }
 
@@ -220,7 +221,8 @@ display: inline-block;
   @include media ($mobile) {
     position: relative;
     bottom: 135px;
-    left: 375px;
+    left:5px;
+    top: 1px;
   }
 }
 
@@ -231,12 +233,28 @@ display: inline-block;
     position: relative;
     margin-left: 100px;
     width: 450px;
-    bottom: 140px;
+    bottom: 110px;
+    top: 10px;
   }
 }
 
-.article {
+.article-container:hover::before {
+  background-color: white;
+  opacity: .01;
+}
 
+.article-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 795px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0f0f0f;
+  opacity: 0.3;
+  height: 401px;
+  z-index: 1;
 }
 
 .shop-button {
@@ -250,6 +268,9 @@ display: inline-block;
   height: em(55);
   display: block;
   margin-left: 530px;
+  @include media($mobile);
+  margin-left: 220px;
+  margin-top: 20px;
 }
 
 .article-list {
@@ -265,6 +286,10 @@ display: inline-block;
 .article1 {
 @include span-columns(6);
 border-top: thin solid gray;
+@include media($mobile) {
+  @include span-columns(12);
+}
+
 }
 
 
@@ -285,4 +310,77 @@ border-top: thin solid gray;
   background-color: black;
   height: em(55);
   margin-top: 10px;
+}
+
+.photobanner-container {
+  width: 1280px;
+  overflow: hidden;
+
+}
+
+.photobanner-list {
+  @include outer-container(1280px);
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 840px;
+@include media($mobile) {
+  margin-top: 1450px;
+}
+
+}
+
+.photo {
+  @include span-columns(3);
+}
+
+.photobanner-list:hover::before {
+  background-image: white;
+  opacity: .01;
+  height: 300px;
+}
+
+.photobanner-list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0f0f0f;
+  opacity: 0.3;
+  height: 300px;
+  z-index: 1;
+  margin-top: 1952px;
+  @include media($mobile) {
+    top: 650px;
+  }
+}
+
+.photos {
+  background-image: url(../trail1.jpg);
+  height: 300px;
+  width: 100%;
+background-size: cover;
+}
+
+.photos1 {
+  background-image: url(../trail4.jpg);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+}
+
+.photos2 {
+  background-image: url(../trail2.jpg);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+}
+
+.photos3 {
+  background-image: url(../trail3.jpg);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
 }
