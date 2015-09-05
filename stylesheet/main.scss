@@ -268,9 +268,10 @@ display: inline-block;
   height: em(55);
   display: block;
   margin-left: 530px;
-  @include media($mobile);
-  margin-left: 220px;
-  margin-top: 20px;
+  @include media($mobile) {
+    margin-left: 220px;
+    margin-top: 20px;
+  }
 }
 
 .article-list {
@@ -351,7 +352,7 @@ border-top: thin solid gray;
   opacity: 0.3;
   height: 300px;
   z-index: 1;
-  margin-top: 1952px;
+  margin-top: 1930px;
   @include media($mobile) {
     top: 650px;
   }
@@ -383,4 +384,110 @@ background-size: cover;
   height: 300px;
   width: 100%;
   background-size: cover;
+}
+
+.location-list {
+@include outer-container(1280px);
+list-style-type: none;
+padding-left: 0;
+}
+
+.location {
+  @include span-columns(6);
+}
+
+.locations {
+  width: 80%;
+  height: 330px;
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+.googlemap {
+  background-image: url(../googlemap.png);
+  width:80%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  bottom: 10px;
+}
+
+.direction-button{
+  @include span-columns(4);
+}
+
+.directions {
+  width: 150px;
+  color: white;
+  background-color: black;
+  height: em(55);
+  margin-top: 10px;
+}
+
+.locationlist-container {
+  border-bottom: thin solid gray;
+  margin-left: 30px;
+  margin-right: 30px;
+
+}
+
+.News {
+  display: inline-block;
+  float: left;
+  padding-top: 10px;
+}
+
+.allarticles-button {
+  @include span-columns(4);
+}
+
+.all-articles {
+  width: 150px;
+  color: white;
+  background-color: black;
+  height: em(55);
+  margin-top: 10px;
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 20px;
+  left: 700px;
+}
+
+.news-container {
+  border-top: thin solid gray;
+}
+
+.news-list {
+  @include outer-container(1280px);
+}
+
+.new {
+  @include span-columns(4);
+  @include omega(3n);
+}
+
+.news {
+  width: 80%;
+  height: 330px;
+  margin-top: 20px;
+  margin-left: 0;
+  border-top: thin solid gray;
+}
+
+
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+}
+
+.news-image {
+  background-image: url(../googlemap.png);
+  height: 50px;
+  width: 60px;
 }
