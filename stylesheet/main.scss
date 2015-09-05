@@ -469,25 +469,53 @@ padding-left: 0;
 }
 
 .news {
-  width: 80%;
-  height: 330px;
+  width: 90%;
+  height: 550px;
   margin-top: 20px;
-  margin-left: 0;
   border-top: thin solid gray;
+  border-right: thin solid gray;
+  padding-right: 10px;
 }
 
 
 
 .circle {
-  height: 30px;
-  width: 30px;
+  height: 60px;
+  width: 60px;
   border-radius: 100%;
   background-color: black;
   color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  padding-top: 15px;
+  margin-left: 50px;
 }
 
-.news-image {
-  background-image: url(../googlemap.png);
-  height: 50px;
-  width: 60px;
+.news-image1 {
+  background-image: url(../swamprabbit.jpg);
+  height: 200px;
+  width: 230px;
+  margin-left: 70px;
+  background-size: cover;
+}
+
+.news-image2 {
+  background-image: url(../healthy.jpg);
+  height: 200px;
+  width: 230px;
+  margin-left: 70px;
+  background-size: cover;
+}
+
+.news-image3 {
+  background-image: url(../bikers.jpg);
+  height: 200px;
+  width: 230px;
+  margin-left: 70px;
+  background-size: cover;
+}
+
+.readfull {
+  color: rgba(239, 22, 6, 1);
 }
