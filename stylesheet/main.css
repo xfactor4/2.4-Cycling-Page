@@ -183,7 +183,7 @@ body {
 
 @media screen and (max-width: 640px) {
   .media {
-    padding-right: 5px; } }
+    padding-right: 2px; } }
 
 .contact {
   color: white;
@@ -424,6 +424,15 @@ body {
 .location:last-child {
   margin-right: 0; }
 
+@media screen and (max-width: 640px) {
+  .location {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+  .location:last-child {
+    margin-right: 0; } }
+
 .locations {
   width: 80%;
   height: 330px;
@@ -486,6 +495,10 @@ body {
   top: 20px;
   left: 700px; }
 
+@media screen and (max-width: 640px) {
+  .all-articles {
+    left: 300px; } }
+
 .news-container {
   border-top: thin solid gray; }
 
@@ -513,6 +526,15 @@ body {
 
 .new:nth-child(3n+1) {
   clear: left; }
+
+@media screen and (max-width: 640px) {
+  .new {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+  .new:last-child {
+    margin-right: 0; } }
 
 .news {
   width: 90%;
@@ -563,6 +585,10 @@ body {
   height: 520px;
   margin: 0; }
 
+@media screen and (max-width: 640px) {
+  .footer-container {
+    height: 1500px; } }
+
 .footer-list {
   max-width: 1280px;
   margin-left: auto;
@@ -588,6 +614,15 @@ body {
 
 .footer:nth-child(4n+1) {
   clear: left; }
+
+@media screen and (max-width: 640px) {
+  .footer {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+  .footer:last-child {
+    margin-right: 0; } }
 
 .footer-head {
   color: white; }
@@ -619,6 +654,10 @@ body {
   background-size: cover;
   margin-left: 570px; }
 
+@media screen and (max-width: 640px) {
+  .logo-footer {
+    margin-left: 270px; } }
+
 .allrights {
   color: white;
   display: inline-block;
@@ -626,9 +665,19 @@ body {
   float: left;
   margin-left: 50px; }
 
+@media screen and (max-width: 640px) {
+  .allrights {
+    top: 30px;
+    margin-left: 20px; } }
+
 .sitesignature {
   color: white;
   display: inline-block;
   position: relative;
   float: right;
   margin-right: 50px; }
+
+@media screen and (max-width: 640px) {
+  .sitesignature {
+    top: 30px;
+    margin-right: 20px; } }

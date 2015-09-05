@@ -184,7 +184,7 @@ display: inline-block;
 padding-right: 30px;
 margin-right: 20px;
 @include media ($mobile) {
-  padding-right: 5px;
+  padding-right: 2px;
 }
 }
 
@@ -394,6 +394,9 @@ padding-left: 0;
 
 .location {
   @include span-columns(6);
+  @include media($mobile) {
+    @include span-columns(12);
+  }
 }
 
 .locations {
@@ -453,6 +456,9 @@ padding-left: 0;
   position: relative;
   top: 20px;
   left: 700px;
+  @include media($mobile) {
+    left: 300px;
+  }
 }
 
 .news-container {
@@ -466,6 +472,9 @@ padding-left: 0;
 .new {
   @include span-columns(4);
   @include omega(3n);
+  @include media($mobile) {
+    @include span-columns(12);
+  }
 }
 
 .news {
@@ -524,6 +533,9 @@ padding-left: 0;
   background-color: rgba(40, 40, 40, 1);
   height: 520px;
   margin: 0;
+  @include media($mobile) {
+    height: 1500px;
+  }
 }
 
 .footer-list {
@@ -534,6 +546,9 @@ padding-left: 0;
 @include span-columns(3);
 @include omega(4n);
 margin-top: 50px;
+@include media($mobile) {
+@include span-columns(12);
+}
 }
 
 .footer-head {
@@ -563,6 +578,9 @@ margin-top: 50px;
   width: 90px;
   background-size: cover;
   margin-left: 570px;
+  @include media($mobile) {
+    margin-left: 270px;
+  }
 }
 
 .allrights {
@@ -571,6 +589,10 @@ margin-top: 50px;
   position: relative;
   float: left;
   margin-left: 50px;
+  @include media($mobile) {
+    top: 30px;
+    margin-left: 20px;
+  }
 }
 
 .sitesignature {
@@ -579,4 +601,8 @@ margin-top: 50px;
   position: relative;
   float: right;
   margin-right: 50px;
+  @include media($mobile) {
+    top: 30px;
+    margin-right: 20px;
+  }
 }
