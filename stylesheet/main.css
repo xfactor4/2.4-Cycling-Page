@@ -557,3 +557,78 @@ body {
 
 .readfull {
   color: #ef1606; }
+
+.footer-container {
+  background-color: #282828;
+  height: 520px;
+  margin: 0; }
+
+.footer-list {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.footer-list::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.footer {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 25%;
+  margin-top: 50px; }
+
+.footer:last-child {
+  margin-right: 0; }
+
+.footer:nth-child(4n) {
+  margin-right: 0; }
+
+.footer:nth-child(4n+1) {
+  clear: left; }
+
+.footer-head {
+  color: white; }
+
+.footers {
+  color: #9a9d9e;
+  width: 40%;
+  height: 200px; }
+
+.subcribe-button {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%; }
+
+.subcribe-button:last-child {
+  margin-right: 0; }
+
+.subcribe {
+  width: 150px;
+  height: 3.4375em;
+  color: white;
+  background-color: #ef1606; }
+
+.logo-footer {
+  background-image: url(../logo.png);
+  height: 90px;
+  width: 90px;
+  background-size: cover;
+  margin-left: 570px; }
+
+.allrights {
+  color: white;
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-left: 50px; }
+
+.sitesignature {
+  color: white;
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-right: 50px; }

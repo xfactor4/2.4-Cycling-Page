@@ -519,3 +519,64 @@ padding-left: 0;
 .readfull {
   color: rgba(239, 22, 6, 1);
 }
+
+.footer-container {
+  background-color: rgba(40, 40, 40, 1);
+  height: 520px;
+  margin: 0;
+}
+
+.footer-list {
+  @include outer-container(1280px);
+}
+
+.footer {
+@include span-columns(3);
+@include omega(4n);
+margin-top: 50px;
+}
+
+.footer-head {
+  color: white;
+}
+
+.footers {
+  color: rgba(154, 157, 158, 1);
+  width: 40%;
+  height: 200px;
+}
+
+.subcribe-button {
+@include span-columns(4);
+}
+
+.subcribe {
+  width: 150px;
+  height: em(55);
+  color: white;
+  background-color: rgba(239, 22, 6, 1);
+}
+
+.logo-footer {
+  background-image: url(../logo.png);
+  height: 90px;
+  width: 90px;
+  background-size: cover;
+  margin-left: 570px;
+}
+
+.allrights {
+  color: white;
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-left: 50px;
+}
+
+.sitesignature {
+  color: white;
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-right: 50px;
+}
