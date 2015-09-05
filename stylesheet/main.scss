@@ -5,7 +5,7 @@ $gutter: modular-scale(0, 0em, $golden);
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 $mobile: new-breakpoint(max-width 640px);
-
+$tablet: new-breakpoint(max-width 768px);
 
 body {
   font-family: 'Oswald', Helvetica, sans-serif;
@@ -98,6 +98,10 @@ margin-top: 1%;
     margin-top: 23%;
     left: 18%;
   }
+  @include media ($tablet)  {
+   margin-top: 24%;
+   margin-left: -7%;
+  }
 }
 
 .subhero {
@@ -110,6 +114,10 @@ margin-top: 1%;
  @include media ($mobile) {
    left: 15%;
    top: 60%;
+ }
+ @include media($tablet) {
+  top: 65%;
+  left: 24%;
  }
 }
 
@@ -133,6 +141,10 @@ margin-top: 705.2px;
     padding-right: 5px;
     margin-top: 30px;
   }
+  @include media($tablet) {
+  margin-left: 0;
+  padding-right: 0;
+  }
 }
 
 .products {
@@ -142,6 +154,9 @@ margin-top: 705.2px;
   margin-right: 20px;
   @include media ($mobile) {
     padding-right: 5px;
+  }
+  @include media($tablet) {
+    padding-right: 0;
   }
 }
 
@@ -176,6 +191,9 @@ margin-right: 20px;
 @include media ($mobile) {
   padding-right: 5px;
 }
+@include media($tablet) {
+  padding-right: 0;
+}
 }
 
 .media {
@@ -185,6 +203,9 @@ padding-right: 30px;
 margin-right: 20px;
 @include media ($mobile) {
   padding-right: 2px;
+}
+@include media($tablet) {
+padding-right: 0;
 }
 }
 
@@ -202,6 +223,10 @@ display: inline-block;
 @include media($mobile) {
   margin-left: 130px;
 }
+@include media($tablet) {
+margin-left: 100px;
+}
+
 
 }
 
@@ -236,6 +261,10 @@ display: inline-block;
     bottom: 110px;
     top: 10px;
   }
+    @include media($tablet) {
+      margin-left: 50px;
+    }
+
 }
 
 .article-container:hover::before {
@@ -271,6 +300,10 @@ display: inline-block;
   @include media($mobile) {
     margin-left: 220px;
     margin-top: 20px;
+  }
+  @include media($tablet) {
+  margin-left: 180px;
+  margin-top: 30px;
   }
 }
 
@@ -356,6 +389,9 @@ border-top: thin solid gray;
   @include media($mobile) {
     top: 650px;
   }
+  @include media($tablet) {
+    top: 32px;
+  };
 }
 
 .photos {
@@ -475,6 +511,9 @@ padding-left: 0;
   @include media($mobile) {
     @include span-columns(12);
   }
+  @include media($tablet) {
+    @include span-columns(12);
+  }
 }
 
 .news {
@@ -536,6 +575,9 @@ padding-left: 0;
   @include media($mobile) {
     height: 1500px;
   }
+  @include media($tablet) {
+  height: 1300px;
+  }
 }
 
 .footer-list {
@@ -546,7 +588,11 @@ padding-left: 0;
 @include span-columns(3);
 @include omega(4n);
 margin-top: 50px;
+
 @include media($mobile) {
+@include span-columns(12);
+}
+@include media($tablet) {
 @include span-columns(12);
 }
 }
@@ -581,6 +627,9 @@ margin-top: 50px;
   @include media($mobile) {
     margin-left: 270px;
   }
+  @include media($tablet) {
+    margin-left: 250px;
+  }
 }
 
 .allrights {
@@ -593,6 +642,9 @@ margin-top: 50px;
     top: 30px;
     margin-left: 20px;
   }
+  @include media($tablet) {
+    top: 50px;
+  }
 }
 
 .sitesignature {
@@ -604,5 +656,10 @@ margin-top: 50px;
   @include media($mobile) {
     top: 30px;
     margin-right: 20px;
+  }
+
+  @include media($tablet) {
+  top: 50px;
+  margin-right: 20px;
   }
 }

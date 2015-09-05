@@ -99,6 +99,11 @@ body {
     margin-top: 23%;
     left: 18%; } }
 
+@media screen and (max-width: 768px) {
+  .Small-text {
+    margin-top: 24%;
+    margin-left: -7%; } }
+
 .subhero {
   color: #9ea1a2;
   display: block;
@@ -111,6 +116,11 @@ body {
   .subhero {
     left: 15%;
     top: 60%; } }
+
+@media screen and (max-width: 768px) {
+  .subhero {
+    top: 65%;
+    left: 24%; } }
 
 .header-container {
   height: 90px;
@@ -132,6 +142,11 @@ body {
     padding-right: 5px;
     margin-top: 30px; } }
 
+@media screen and (max-width: 768px) {
+  .about {
+    margin-left: 0;
+    padding-right: 0; } }
+
 .products {
   color: white;
   display: inline-block;
@@ -141,6 +156,10 @@ body {
 @media screen and (max-width: 640px) {
   .products {
     padding-right: 5px; } }
+
+@media screen and (max-width: 768px) {
+  .products {
+    padding-right: 0; } }
 
 .swamprabbit {
   color: white;
@@ -175,6 +194,10 @@ body {
   .blog {
     padding-right: 5px; } }
 
+@media screen and (max-width: 768px) {
+  .blog {
+    padding-right: 0; } }
+
 .media {
   color: white;
   display: inline-block;
@@ -184,6 +207,10 @@ body {
 @media screen and (max-width: 640px) {
   .media {
     padding-right: 2px; } }
+
+@media screen and (max-width: 768px) {
+  .media {
+    padding-right: 0; } }
 
 .contact {
   color: white;
@@ -197,6 +224,10 @@ body {
 @media screen and (max-width: 640px) {
   .heading1 {
     margin-left: 130px; } }
+
+@media screen and (max-width: 768px) {
+  .heading1 {
+    margin-left: 100px; } }
 
 .heading2 {
   display: inline-block;
@@ -230,6 +261,10 @@ body {
     width: 450px;
     bottom: 110px;
     top: 10px; } }
+
+@media screen and (max-width: 768px) {
+  .paragraph1 {
+    margin-left: 50px; } }
 
 .article-container:hover::before {
   background-color: white;
@@ -269,6 +304,11 @@ body {
   .shop-buttons {
     margin-left: 220px;
     margin-top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .shop-buttons {
+    margin-left: 180px;
+    margin-top: 30px; } }
 
 .article-list {
   max-width: 1280px;
@@ -378,6 +418,10 @@ body {
 @media screen and (max-width: 640px) {
   .photobanner-list::before {
     top: 650px; } }
+
+@media screen and (max-width: 768px) {
+  .photobanner-list::before {
+    top: 32px; } }
 
 .photos {
   background-image: url(../trail1.jpg);
@@ -536,6 +580,15 @@ body {
   .new:last-child {
     margin-right: 0; } }
 
+@media screen and (max-width: 768px) {
+  .new {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+  .new:last-child {
+    margin-right: 0; } }
+
 .news {
   width: 90%;
   height: 550px;
@@ -589,6 +642,10 @@ body {
   .footer-container {
     height: 1500px; } }
 
+@media screen and (max-width: 768px) {
+  .footer-container {
+    height: 1300px; } }
+
 .footer-list {
   max-width: 1280px;
   margin-left: auto;
@@ -616,6 +673,15 @@ body {
   clear: left; }
 
 @media screen and (max-width: 640px) {
+  .footer {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 100%; }
+  .footer:last-child {
+    margin-right: 0; } }
+
+@media screen and (max-width: 768px) {
   .footer {
     float: left;
     display: block;
@@ -658,6 +724,10 @@ body {
   .logo-footer {
     margin-left: 270px; } }
 
+@media screen and (max-width: 768px) {
+  .logo-footer {
+    margin-left: 250px; } }
+
 .allrights {
   color: white;
   display: inline-block;
@@ -670,6 +740,10 @@ body {
     top: 30px;
     margin-left: 20px; } }
 
+@media screen and (max-width: 768px) {
+  .allrights {
+    top: 50px; } }
+
 .sitesignature {
   color: white;
   display: inline-block;
@@ -680,4 +754,9 @@ body {
 @media screen and (max-width: 640px) {
   .sitesignature {
     top: 30px;
+    margin-right: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .sitesignature {
+    top: 50px;
     margin-right: 20px; } }
